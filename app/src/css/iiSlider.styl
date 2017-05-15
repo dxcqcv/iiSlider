@@ -1,0 +1,85 @@
+/*
+   A Slider save human eyes  
+   @file iiSlider.js 
+   @author Roy Shang dxcqcv@gmail.com
+   @license MIT license
+   Copyright (C) 2017 Roy Shang
+*/
+
+*
+  margin 0
+  padding 0
+
+h1
+  text-align center
+  font-weight 300
+
+ul
+  list-style none
+
+#iiSlider
+  position relative
+  overflow hidden
+  margin 20px auto 0 auto
+  border-radius 4px
+
+.slider
+  position relative
+  height 200px
+  transition left .5s linear
+  left 0
+
+item()
+  .slider li
+    position relative
+    display block
+    float left
+    width 800px
+    height 500px
+    text-align center
+    line-height 800px
+    for prop in arguments
+      &.{prop[0]}
+        background prop[1]
+
+item(slide-1 #ccc,slide-2 #39c, slide-3 #edf, slide-4 #d73, slide-5 #87e)
+
+a.control_prev, a.control_next
+  user-select none
+  position absolute
+  top 40%
+  z-index 999
+  display block
+  padding 4% 3%
+  width auto
+  height auto
+  background #2a2a2a
+  color #fff
+  text-decoration none
+  font-weight 600
+  font-size 18px
+  opacity 0.8
+  cursor pointer
+
+a.control_next
+  right 0
+
+.indicator
+  position absolute
+  bottom 30px
+  left 50%
+  transform translateX(-50%)
+
+.indicator li
+  float left
+  width 20px
+  height 20px
+  border-radius 50%
+  background #fff
+  margin-left 10px
+  cursor pointer
+
+.indicator li.active
+  background red
+
+

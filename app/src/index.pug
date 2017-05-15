@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title iiSlider Demo
+    meta(charset = 'utf-8')
+  body
+    h1 iiSlider Demo
+    #iiSlider
+      a.control_next >
+      a.control_prev <
+      ul.slider
+        each val in [1,2,3,4,5]
+          li(class=`slide-${val}` data-num=val) Slide #{val}
+      ul.indicator
+        each val in [1,2,3,4,5]
+          if(val === 1)
+            li(class=`active` data-idx=val)
+          else
+            li(data-idx=val)
+  script.
+    //- setup
+    const MySlider = Object.create(iiSlider);
+    MySlider.setup({
+      wrapper: 'iiSlider',
+      slider: 'slider',
+      prev: '.control_prev',
+      next: '.control_next',
+      moveSpeed: 0.6,
+      loopSpeed: 2000,
+      auto: true,
+      indicator: '.indicator > li',
+    });
+    MySlider.build();
+

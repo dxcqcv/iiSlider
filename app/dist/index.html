@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><title>iiSlider Demo</title><meta charset="utf-8"><link href="css/iiSlider.2c355fb6.css" rel="stylesheet"></head><body><h1>iiSlider Demo</h1><div id="iiSlider"><a class="control_next">></a><a class="control_prev"><</a><ul class="slider"><li class="slide-1" data-num="1">Slide 1</li><li class="slide-2" data-num="2">Slide 2</li><li class="slide-3" data-num="3">Slide 3</li><li class="slide-4" data-num="4">Slide 4</li><li class="slide-5" data-num="5">Slide 5</li></ul><ul class="indicator"><li class="active" data-idx="1"></li><li data-idx="2"></li><li data-idx="3"></li><li data-idx="4"></li><li data-idx="5"></li></ul></div><script type="text/javascript" src="js/iiSlider.2c355fb6.js"></script></body><script>//- setup
+const MySlider = Object.create(iiSlider);
+MySlider.setup({
+  wrapper: 'iiSlider',
+  slider: 'slider',
+  prev: '.control_prev',
+  next: '.control_next',
+  moveSpeed: 0.6,
+  loopSpeed: 2000,
+  auto: true,
+  indicator: '.indicator > li',
+});
+MySlider.build();</script></html>
