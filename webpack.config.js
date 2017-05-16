@@ -164,7 +164,7 @@ if(ENV_PRODUCTION) {
   });
 
   config.plugins.push(
-    new CleanWebpackPlugin(['app/dist/js','app/dist/css']),
+    new CleanWebpackPlugin(['app/dist/report','app/dist/js','app/dist/css']),
     new DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
@@ -173,8 +173,11 @@ if(ENV_PRODUCTION) {
     new ExtractTextPlugin({
       filename: 'css/[name].[chunkhash:8].css'
     }),
-    new BabiliPlugin()
-    //,new BundleAnalyzerPlugin()
+    new BabiliPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      reportFilename: 'report/report.html'
+    })
 
   );
 }
