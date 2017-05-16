@@ -2,7 +2,11 @@
   "name": "iiSlider",
   "version": "0.1.0",
   "description": "A slider for human being, save your eyes",
-  "author": "Roy Shang",
+  "author": {
+    "name": "Roy Shang",
+    "email": "dxcqcv@gmail.com",
+    "url": "https://dxcqcv.github.io/"
+  }, 
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack  --display-error-details"
