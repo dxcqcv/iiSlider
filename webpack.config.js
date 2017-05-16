@@ -173,8 +173,8 @@ if(ENV_PRODUCTION) {
     new ExtractTextPlugin({
       filename: 'css/[name].[chunkhash:8].css'
     }),
-    new BabiliPlugin(),
-    new BundleAnalyzerPlugin()
+    new BabiliPlugin()
+    //,new BundleAnalyzerPlugin()
 
   );
 }
