@@ -2,17 +2,13 @@
   "name": "iiSlider",
   "version": "0.1.0",
   "description": "A slider for human being, save your eyes",
-  "author": {
-    "name": "Roy Shang",
-    "email": "dxcqcv@gmail.com",
-    "url": "https://dxcqcv.github.io/"
-  }, 
+  "author": "Roy Shang",
   "scripts": {
+    "test":"tap test/*.js --cov",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack  --display-error-details && gulp"
   },
   "license": "MIT",
-  "author": "Roy Shang",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "~6.7.7",
@@ -42,6 +38,7 @@
     "style-loader": "~0.16.1",
     "stylus": "~0.54.5",
     "stylus-loader": "~3.0.1",
+    "tap": "^10.3.2",
     "webpack": "~2.3.3",
     "webpack-bundle-analyzer": "^2.8.1",
     "webpack-dev-server": "~2.4.2"

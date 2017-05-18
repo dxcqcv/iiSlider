@@ -1,10 +1,9 @@
 # iiSlider
 
-[![Build Status](https://travis-ci.org/dxcqcv/iiSlider.svg?branch=master)](https://travis-ci.org/dxcqcv/iiSlider)
-
-[![Coverage Status](https://coveralls.io/repos/github/dxcqcv/iiSlider/badge.svg?branch=master)](https://coveralls.io/github/dxcqcv/iiSlider?branch=master)
-
 iiSlider is a lightweight, high-performant, no library dependencies cross-platform slide controller. It can help human being save eyes.
+
+[![Build Status](https://travis-ci.org/dxcqcv/iiSlider.svg?branch=master)](https://travis-ci.org/dxcqcv/iiSlider)
+[![Coverage Status](https://coveralls.io/repos/github/dxcqcv/iiSlider/badge.svg?branch=master)](https://coveralls.io/github/dxcqcv/iiSlider?branch=master)
 
 ## Features
 
