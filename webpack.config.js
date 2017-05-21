@@ -104,7 +104,7 @@ config.plugins = [
 // DEVELOPMENT or PRODUCTION
 if (ENV_DEVELOPMENT || ENV_PRODUCTION) {
   config.entry = {
-    iiSlider:path.resolve(__dirname, 'app/src/js/iiSlider.js')
+    iiSlider:path.resolve(__dirname, 'app/src/js/index.js')
   };
 
   config.output = {

@@ -1,4 +1,3 @@
-import '../css/iiSlider.styl';
 
 /*
    A Slider save human eyes  
@@ -56,6 +55,7 @@ import '../css/iiSlider.styl';
       let [indicator] = this.indicators.filter(i => i.getAttribute('data-idx') == num);
       [...indicator.parentNode.childNodes].map(i => i.classList.remove('active'));
       indicator.classList.add('active');
+      return num;
     },
   };
 
@@ -181,7 +181,7 @@ import '../css/iiSlider.styl';
       this.isMoving = false;
       this.loop;
 
-
+      return this;
     },
     makeup() {
 
@@ -192,7 +192,6 @@ import '../css/iiSlider.styl';
       this.slider.style.width = `${this.slideUlWidth}px`;
       this.slider.style.marginLeft = `-${this.slideWidth}px`;
 
-      // last is 4
       this.slider.insertBefore(this.slider.querySelector('li:last-child'),this.slider.firstChild);
 
 
@@ -225,7 +224,6 @@ import '../css/iiSlider.styl';
   Object.setPrototypeOf(iiSlider , Indicator);
 
   return iiSlider ;
-
 } ));
 
 

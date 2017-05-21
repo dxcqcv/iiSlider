@@ -1,9 +1,9 @@
-var tap = require('tap');
-var mam = require('../my-awesome-module.js');
+var test = require('tape');
+var iiSlider = require('../app/src/js/iiSlider.js');
+
+test('test opt', function(t) {
+  t.plan(1);
+  t.ok(iiSlider);
+})
 
 
-// Always call as (found, wanted) by convention
-tap.equal(mam(1), 'odd');
-tap.equal(mam(2), 'even');
-tap.equal(mam(200), 'big');
-tap.equal(mam(-10), 'negative')

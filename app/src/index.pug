@@ -20,15 +20,16 @@ html
   script.
     //- setup
     const MySlider = Object.create(iiSlider);
-    MySlider.setup({
-      wrapper: 'iiSlider',
-      slider: 'slider',
-      prev: '.control_prev',
-      next: '.control_next',
-      moveSpeed: 0.6,
-      loopSpeed: 2000,
-      auto: true,
-      indicator: '.indicator > li',
-    });
-    MySlider.build();
+    MySlider
+      .setup({
+        wrapper: 'iiSlider',
+        slider: 'slider',
+        prev: '.control_prev',
+        next: '.control_next',
+        moveSpeed: 0.6,
+        loopSpeed: 2000,
+        auto: true,
+        indicator: '.indicator > li',
+      })
+      .build();
 
