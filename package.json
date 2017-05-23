@@ -4,22 +4,9 @@
   "description": "A slider for human being, save your eyes",
   "author": "Roy Shang",
   "scripts": {
-    "test": "tape test/basic.js --cov",
+    "test": "tap test/basic.js --cov",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack  --display-error-details && gulp"
-  },
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6",
-      "android-browser/latest"
-    ]
   },
   "license": "MIT",
   "dependencies": {},
